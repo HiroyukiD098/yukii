@@ -14,7 +14,8 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-image: radial-gradient(circle, rgba(255, 215, 0, 0.2) 10%, transparent 90%);
+            background-image: radial-gradient(circle, rgba(255, 215, 0, 0.2) 10%, transparent 90%), url('assets/images/background-pattern.png');
+            background-size: cover;
         }
 
         header {
@@ -23,6 +24,7 @@
             align-items: center;
             padding: 20px;
             background-color: black;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
         }
 
         nav ul {
@@ -60,7 +62,7 @@
             width: 100%;
             max-width: 400px;
             margin: 10px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .hover-effect:hover {
@@ -74,6 +76,8 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
+            border: 5px solid #FFD700;
+            box-shadow: 0 0 10px #FFD700;
         }
 
         button {
@@ -83,13 +87,14 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            transition: transform 0.3s, background-color 0.3s;
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
             border-radius: 5px;
         }
 
         button:hover {
             background-color: white;
             transform: scale(1.1);
+            box-shadow: 0 0 10px #FFD700;
         }
 
         @media (max-width: 768px) {
