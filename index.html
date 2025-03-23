@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiroyuki Draw Portfolio</title>
+    <style>
+        body {
+    background-color: black;
+    color: #FFD700;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    animation: electric-glow 1.5s infinite alternate;
+}
+
+@keyframes electric-glow {
+    from {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500;
+    }
+    to {
+        text-shadow: 0 0 20px #FFD700, 0 0 40px #FFA500;
+    }
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    console.log("Portfolio Loaded");
+});
+
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Hiroyuki Draw</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Showcasing my best works in art, videography, and editing.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a digital artist, videographer, and video editor passionate about creating stunning visuals.</p>
+    </section>
+
+    <section id="works">
+        <h2>My Works</h2>
+        <div class="gallery">
+            <img src="assets/images/sample1.jpg" alt="Work 1">
+            <img src="assets/images/sample2.jpg" alt="Work 2">
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Creativity</li>
+                    <li>Collaboration</li>
+                </ul>
+            </div>
+            <div class="technical-skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Adobe After Effects</li>
+                    <li>DaVinci Resolve</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hiroyuki Draw</p>
+    </footer>
+
+</body>
+</html>
